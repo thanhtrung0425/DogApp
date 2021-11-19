@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.example.dogapp.databinding.ActivityMainBinding;
 import com.example.dogapp.model.DogBreed;
@@ -34,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        View view = binding.getRoot();
+        setContentView(view);
         //getSupportFragmentManager().beginTransaction().replace(R.id.maincontainer, new ListFragment()).commit();
     }
 }
