@@ -65,7 +65,7 @@ public class ListFragment extends Fragment {
 
                     @Override
                     public void onError(@NonNull Throwable e) {
-                        Log.d("DEBUG", "Fail: " + e.getMessage());
+                        Log.d("DEBUG", "Failed: " + e.getMessage());
                     }
                 });
 
